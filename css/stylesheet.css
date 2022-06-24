@@ -98,7 +98,8 @@ button:hover {
 
 .rating_clicked {
     background-color: var(--button_color);
-    color: var(--default_font_color)
+    color: var(--default_font_color);
+    pointer-events: none;
 }
 
 .img_overlay {
