@@ -33,7 +33,7 @@ button {
     background-color: var(--button_color);
     color: var(--default_font_color);
     border-radius: 100px;
-    min-height: 3em;
+    min-height: 2.5em;
     border: none;
     letter-spacing: 3px;
     text-transform: uppercase;
