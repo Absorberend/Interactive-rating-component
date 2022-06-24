@@ -43,6 +43,7 @@ button {
 button:hover {
     background-color: var(--default_font_color);
     color: var(--button_color);
+    cursor: pointer;
 }
 
 .box_container {
@@ -94,6 +95,7 @@ button:hover {
     background-color: hsla(216, 12%, 54%, 0.6);
     color: var(--default_font_color);
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 .rating_clicked {
