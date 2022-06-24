@@ -4,7 +4,7 @@
     --font_color: hsl(217, 12%, 63%);
     --overlay_color: hsl(216, 12%, 54%);
     --container_color: hsl(213, 19%, 18%);
-    --circle_overlay: hsla(216, 12%, 54%, 0.2);
+    --circle_overlay: hsla(216, 12%, 54%, 0.1);
 }
 
 body {
@@ -38,6 +38,11 @@ button {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-block-start: 1.5em;
+}
+
+button:hover {
+    background-color: var(--default_font_color);
+    color: var(--button_color);
 }
 
 .box_container {
@@ -86,9 +91,9 @@ button {
 }
 
 .circle_overlay:hover {
-    background-color: var(--button_color);
+    background-color: hsla(216, 12%, 54%, 0.6);
     color: var(--default_font_color);
-    transition: all 1s ease;
+    transition: all 0.4s ease;
 }
 
 .rating_clicked {
