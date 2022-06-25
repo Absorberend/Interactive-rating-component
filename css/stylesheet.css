@@ -13,19 +13,20 @@ body {
     color: var(--default_font_color);
 }
 
-body p {
+main p {
     font-size: 15px;
     color: var(--font_color);
-    margin-block-start: 0.5em;
+    line-height: 1.6;
 }
 
-body h1 {
+main h1 {
     margin-block-end: 0px;
 }
 
 main {
     display: flex;
     align-items: center;
+    justify-items: center;
     height: 100vh;
 }
 
@@ -33,7 +34,7 @@ button {
     background-color: var(--button_color);
     color: var(--default_font_color);
     border-radius: 100px;
-    min-height: 2.5em;
+    min-height: 3.5em;
     border: none;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -52,10 +53,10 @@ button:hover {
     margin: 1em auto;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2.5em 1.5em 2em 1.5em;
+    padding: 1.5em 1.5em 2em 1.5em;
     max-width: 300px;
     border-radius: 15px;
-    min-height: 25vh;
+    height: 320px;
 }
 
 .container {
@@ -67,6 +68,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 1em;
     margin-block-start: 0.5em;
     color: var(--font_color);
 }
@@ -75,9 +77,9 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 12px;
+    width: 25px;
     background-color: var(--circle_overlay);
-    width: 20px;
     border-radius: 50%;
 }
 
@@ -85,7 +87,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 10px;
     background-color: var(--circle_overlay);
     width: 20px;
     border-radius: 50%;
@@ -117,9 +119,12 @@ button:hover {
     display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 900px) {
     .box_container {
-        max-width: 340px;
-        height: 40vh;
+        max-width: 345px;
+        height: 350px;
     }
-}
+    .rating_container {
+        gap: 0.5em;
+    }
+  }
